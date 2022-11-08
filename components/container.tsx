@@ -26,7 +26,7 @@ export default function Container({children}: Props) {
           </chakra.span>
           . Hosted on{' '}
           <chakra.span fontWeight="semibold" color="button1">
-            GTA SYSTEM C
+            Vercel
           </chakra.span>
           .
         </Text>
