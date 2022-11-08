@@ -1,9 +1,9 @@
 import { Stack, Box, SlideFade, Text, Heading, Link, Button } from '@chakra-ui/react'
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaCarBattery, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Intro() {
   return (
-    <Stack spacing={10} justifyContent="flex-start" alignItems="flex-start">
+    <Stack spacing={10} justifyContent="flex-start" alignItems="center">
       <SlideFade
         in={true}
         transition={{ enter: { duration: 0.4, delay: 0.7 } }}>
@@ -21,11 +21,11 @@ export default function Intro() {
         <Heading
           fontSize="display"
           lineHeight={'95%'}
-          color="complement"
+          color="#ffff00"
           letterSpacing={{ sm: '-1.2px', md: '-1.8px' }}
           position="relative"
         >
-          <Box color="displayColor" as="span">Your Name</Box>
+          <Box color="#00BBFF" as="span">GTA 18.7 ICLe</Box>
           .
         </Heading>
       </SlideFade>
@@ -35,9 +35,9 @@ export default function Intro() {
         transition={{ enter: { duration: 0.4, delay: 0.9 } }}
       >
         <Box w={['85vw', '40vw']}>
-        <Text fontSize="display3" color="textSecondary">
-          Some description about yourself. Lorem ipsum and all that good stuff. Some more waffle to fill up the space.
-        </Text>
+          <Text fontSize="display3" color="textSecondary">
+            Blah and foo!
+          </Text>
         </Box>
       </SlideFade>
 
@@ -45,39 +45,49 @@ export default function Intro() {
         in={true}
         transition={{ enter: { duration: 0.4, delay: 1.0 } }}
       >
-        <Stack isInline spacing={4}>
-          <Link href="https://github.com/" isExternal>
+        <Stack isInline spacing={4}> {/*This is a stack of buttons*/}
+          <Link href="https://github.com/GTArvanitakis" isExternal>
             <Button
-              leftIcon={<FaGithub color="#5F99FF" />}
+              leftIcon={<FaGithub color="#00ff00" />}
               position="static"
               size='md'
               color="white"
-              bg="#151415"
+              bg="#005055"
             >
               Github
             </Button>
           </Link>
           <Link href="https://linkedin.com/" isExternal>
             <Button
-              leftIcon={<FaLinkedin color="#5F99FF" />}
+              leftIcon={<FaLinkedin color="#FF0000" />}
               position="static"
               size='md'
               color="white"
-              bg="#151415"
+              bg="#550000"
             >
               LinkedIn
             </Button>
           </Link>
-          <Link href="mailto:gdsc@imperial.ac.uk" isExternal>
+          <Link href="mailto:gtarvanitakis@yahoo.gr" isExternal>
             <Button
               leftIcon={<FaEnvelope fill="#5F99FF" />}
               transition="0.3s"
               position="static"
               size='md'
               color="white"
-              bg="#151415"
+              bg="#000040"
             >
               Email
+            </Button>
+            <Button
+              leftIcon={<FaCarBattery fill="#ff00ff"/>}
+              transition="0.3s"
+              position="static"
+              size='md'
+              color="white"
+              bg="#000040"
+            >
+              New Button
             </Button>
           </Link>
         </Stack>

@@ -17,7 +17,7 @@ export default function Navbar() {
           color="displayColor"
           fontWeight="bold"
           fontSize="32px">
-          <Bracket>&#123;</Bracket>GDSC<Bracket>&#125;</Bracket>
+          <Bracket>&#123;</Bracket>GDSC - GTA<Bracket>&#125;</Bracket>
         </Text>
       </Box>
       <Spacer />
@@ -27,9 +27,14 @@ export default function Navbar() {
             Home
           </Button>
         </NextLink>
-        <NextLink href="/todo!" passHref>
+        <NextLink href="/GTA_CV (Ver 1.2).pdf" passHref>
           <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px" color="textSecondary">
             CV
+          </Button>
+        </NextLink>
+        <NextLink href="/todo!" passHref>
+          <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px" color="#845162">
+            HelloWorlds!!!!!!
           </Button>
         </NextLink>
       </Box>

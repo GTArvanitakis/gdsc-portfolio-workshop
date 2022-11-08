@@ -10,6 +10,7 @@ export default function AboutMe() {
       <Text fontSize="display3" color="textSecondary">
           Some description about yourself. Lorem ipsum and all that good stuff again.
       </Text>
+      {/* <imc src = "GTA square sign black2.0 .png"/>      */}
     </VStack>
 
   )
